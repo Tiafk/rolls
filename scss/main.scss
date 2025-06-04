@@ -1,0 +1,59 @@
+@import './banner';
+@import './allBlocks';
+@import './slider';
+@import './customBlock';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Nunito-Medium';
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1113px;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        .text-uder {
+            max-width: 924px;
+            font-family: 'Nunito-Bold';
+            font-weight: 700;
+            line-height: 51px;
+            font-size: 42px;
+            color: #E9501E;
+            margin:56px 0  55.6px 43px;
+        }
+    }
+}
+
+
+@media (max-width:1920px) {
+    .main .wrapper .text-uder {
+        font-size: clamp(20px, 4vw,42px);
+        line-height: clamp(30px, 5vw,51px);
+        margin: clamp(30px, 4vw,56px) 0 clamp(30px, 4vw,55.6px) clamp(18px, 4vw,43px);
+    }
+}
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../fonts/Nunito-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Nunito-Medium';
+    src: url('../fonts/Nunito-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+}

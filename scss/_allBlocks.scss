@@ -1,0 +1,50 @@
+.block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 41.94px;
+    overflow: hidden;
+    background-color: #8651514d;
+
+    .back-img1 {
+        position: absolute;
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+
+    .back-img2 {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        img {
+            height: 100%;
+        }
+    }
+
+    p {
+        width: 37.2%;
+        max-width: 402px;
+        font-weight: 500;
+        font-size: 22.37px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        z-index: 5;
+    }
+}
+
+.container-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+@media (max-width:800px) {
+    .block {
+        p {
+            width: auto;
+            max-width: none;
+        }
+    }
+}

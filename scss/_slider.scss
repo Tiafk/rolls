@@ -1,0 +1,53 @@
+.swiper-button-prev, .swiper-button-next {
+  color: #fff;
+  font-weight: 700;
+}
+
+.mySwiper1 {
+  width: 50%;
+}
+
+.mySwiper2 {
+  width: 60%;
+}
+
+.mySwiper3 {
+  width: 58.5%;
+}
+
+.swiper {
+  height: 398px;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+  z-index: 5;
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    width: auto; // ширина по содержимому
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+    .slide_image {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        display: block;
+        max-width: 100%; // не выходить за пределы
+      }
+    }
+  }
+}
